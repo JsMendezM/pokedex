@@ -1,0 +1,96 @@
+.card {
+    background-color: rgba(255, 140, 166, .6);
+    border-radius: 1rem;
+    box-shadow: 7px 7px 10px rgba(218, 20, 100, .4);
+    cursor: pointer;
+    text-align: center;
+    width: 280px;
+    height: 300px;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.card:hover {
+    background-color: rgb(255, 188, 224);
+}
+
+.content-card {
+    display: flex;
+}
+
+.card-content {
+    width: 55%;
+}
+
+.card-img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    width: 45%;
+}
+
+.card-title {
+    border-bottom: 2px solid #DA1464;
+    font-size: 1.3rem;
+}
+
+.card-types,
+.card-stats {
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: .5rem;
+    margin-left: .75rem;
+    width: 100%;
+}
+
+.type,
+.type-name,
+.stat-name,
+.stat {
+    margin: 0;
+}
+
+.type,
+.stat-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: .5rem;
+}
+
+.type-name,
+.stat {
+    align-items: center;
+    display: flex;
+    margin: 0 .5rem 0 .5rem;
+}
+
+.background {
+    animation: turn 10s infinite linear;
+    background-image: url(/src/image/pokeball.81cfacf9.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 50%;
+    margin-right: .5rem;
+    width: 76%;
+}
+
+@keyframes turn {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.img {
+    display: flex;
+    justify-content: left;
+}
+::-webkit-scrollbar {
+    display: none;
+    }
